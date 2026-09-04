@@ -1,0 +1,746 @@
+[
+  {
+    "id": "AIT-QRY-D5DE9D81",
+    "timestamp": "2026-09-04 20:43:37",
+    "question": "What is the CSE semester fee and exam fee schedule?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "Ollama generation timed out. The local model may still be loading or system is under high load.",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "attendance_policy.md#Minimum Attendance Requirement",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 55189
+  },
+  {
+    "id": "AIT-QRY-B982DCCB",
+    "timestamp": "2026-09-04 19:30:25",
+    "question": "What is the first graduate scholarship amount?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "The first graduate scholarship amount is ₹25,000 per annum, as sanctioned by the Directorate of Technical Education (DoTE) for students who are the first in their immediate family to pursue a university degree and have been admitted through single-window TNEA counseling.",
+    "source_documents": [
+      "scholarship_info.md#Government & State Welfare Schemes",
+      "scholarship_info.md#Scholarship Schemes & Financial Assistance - Amypo Institute of Technology",
+      "scholarship_info.md#Institutional Scholarship Schemes",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 41913
+  },
+  {
+    "id": "AIT-QRY-A91A20D2",
+    "timestamp": "2026-09-04 19:28:48",
+    "question": "I received an internship email asking for ₹3,000. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 3
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 3316
+  },
+  {
+    "id": "AIT-QRY-788B1956",
+    "timestamp": "2026-09-04 19:24:38",
+    "question": "[Security Verify] Urgent: Amypo Campus Placement Shortlist announced for TCS N...",
+    "detected_intent": "SECURITY_VERIFICATION",
+    "answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)\n- Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n- Artificial urgency / coercive time pressure detected\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+      "internship_policy.md#Internship Guidelines & Fraud Warning Policy - Amypo Institute of Technology",
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...",
+      "policy_sources": [
+        "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+        "internship_policy.md#Internship Guidelines & Fraud Warning Policy - Amypo Institute of Technology"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)",
+          "Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students",
+          "Artificial urgency / coercive time pressure detected"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "target_url": "http://tcs-amypo-careers.xyz",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 5
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)",
+        "Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students",
+        "Artificial urgency / coercive time pressure detected"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)\n- Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n- Artificial urgency / coercive time pressure detected\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 3429
+  },
+  {
+    "id": "AIT-QRY-37EBB510",
+    "timestamp": "2026-09-04 19:24:16",
+    "question": "[Security Verify] All 5th semester students are informed that the End-Semester...",
+    "detected_intent": "SECURITY_VERIFICATION",
+    "answer": "### 🏛️ Official College Policy\n## 🚨 CRITICAL SECURITY & SCAM ADVISORY ON FAKE INTERNSHIP OFFERS\nThe Corporate Placement Cell and Institutional Cyber Security Desk issue the following strict advisory regarding fraudulent internship recruitment campaigns targeting college students:...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **15/100**\n- **Threat Classification**: **LIKELY SAFE**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**LIKELY SAFE - VERIFY CREDENTIALS**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nNo active threat indicators detected. Ensure all correspondence continues through official channels and never share OTPs or credentials.\n",
+    "source_documents": [
+      "internship_policy.md#🚨 CRITICAL SECURITY & SCAM ADVISORY ON FAKE INTERNSHIP OFFERS",
+      "internship_policy.md#Internship Guidelines & Fraud Warning Policy - Amypo Institute of Technology",
+      "fee_structure.md#STRICT SECURITY WARNING ON FEE PAYMENT FRAUD"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "## 🚨 CRITICAL SECURITY & SCAM ADVISORY ON FAKE INTERNSHIP OFFERS\nThe Corporate Placement Cell and Institutional Cyber Security Desk issue the following strict advisory regarding fraudulent internship recruitment campaigns targeting college students:...",
+      "policy_sources": [
+        "internship_policy.md#🚨 CRITICAL SECURITY & SCAM ADVISORY ON FAKE INTERNSHIP OFFERS",
+        "internship_policy.md#Internship Guidelines & Fraud Warning Policy - Amypo Institute of Technology"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 15,
+        "threat_level": "LIKELY SAFE",
+        "indicators": [],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "target_url": "https://erp.amypo.edu.in",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 0
+        },
+        "message": "ScamON security investigation successfully verified threat markers (LIKELY SAFE - 15/100)."
+      },
+      "final_assessment": "LIKELY SAFE - VERIFY CREDENTIALS",
+      "risk_score": 15,
+      "threat_level": "LIKELY SAFE",
+      "indicators": [],
+      "recommendation": "No active threat indicators detected. Ensure all correspondence continues through official channels and never share OTPs or credentials.",
+      "formatted_answer": "### 🏛️ Official College Policy\n## 🚨 CRITICAL SECURITY & SCAM ADVISORY ON FAKE INTERNSHIP OFFERS\nThe Corporate Placement Cell and Institutional Cyber Security Desk issue the following strict advisory regarding fraudulent internship recruitment campaigns targeting college students:...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **15/100**\n- **Threat Classification**: **LIKELY SAFE**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**LIKELY SAFE - VERIFY CREDENTIALS**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nNo active threat indicators detected. Ensure all correspondence continues through official channels and never share OTPs or credentials.\n"
+    },
+    "latency_ms": 3323
+  },
+  {
+    "id": "AIT-QRY-2B0423DE",
+    "timestamp": "2026-09-04 19:23:00",
+    "question": "I received an internship email asking for ₹3,000. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 3
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 6210
+  },
+  {
+    "id": "AIT-QRY-D24355FD",
+    "timestamp": "2026-09-04 19:10:15",
+    "question": "[Security Verify] Pay ₹1,500 registration deposit at http://tcs-amypo-careers....",
+    "detected_intent": "SECURITY_VERIFICATION",
+    "answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)\n- Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...",
+      "policy_sources": [
+        "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+        "internship_policy.md#Red Flags & Scam Indicators"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)",
+          "Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "target_url": "http://tcs-amypo-careers.xyz",
+          "suggested_agent": "Web & QR Scan",
+          "indicators_count": 4
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)",
+        "Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Suspicious low-reputation top-level domain (tcs-amypo-careers.xyz)\n- Upfront recruitment fee demand (₹1,500): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 2204
+  },
+  {
+    "id": "AIT-QRY-18BC5960",
+    "timestamp": "2026-09-04 19:10:12",
+    "question": "Does Amypo offer astronaut flight training courses?",
+    "detected_intent": "UNKNOWN_QUERY",
+    "answer": "I could not find that information in the college knowledge base.",
+    "source_documents": [
+      "admission.md#Admission Procedures & Guidelines - Amypo Institute of Technology",
+      "placement_policy.md#Corporate Placement Mission",
+      "attendance_policy.md#Attendance Regulations & Policy - Amypo Institute of Technology",
+      "academic_calendar.md#Academic Calendar & Key Operational Dates - Amypo Institute of Technology"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 6212
+  },
+  {
+    "id": "AIT-QRY-DD0BBA86",
+    "timestamp": "2026-09-04 19:10:06",
+    "question": "I received an internship email asking for ₹3,000 registration fee. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 3
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 2162
+  },
+  {
+    "id": "AIT-QRY-8DBFEA18",
+    "timestamp": "2026-09-04 19:10:04",
+    "question": "What is the minimum attendance percentage required?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "The minimum attendance percentage required is **75.0%** across all theory and laboratory courses registered in a semester to become eligible to appear for the End-Semester Examinations.",
+    "source_documents": [
+      "attendance_policy.md#Minimum Attendance Requirement",
+      "attendance_policy.md#Condonation of Attendance Shortage (65.0% to 74.99%)",
+      "attendance_policy.md#Real-Time Attendance Monitoring",
+      "attendance_policy.md#Academic Attendance Standard"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 9069
+  },
+  {
+    "id": "AIT-QRY-91D75D75",
+    "timestamp": "2026-09-04 19:09:55",
+    "question": "What is the CSE semester fee?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "According to the Academic Tuition Fee Structure (Per Semester) in Document 2, the semester tuition fee for Computer Science & Engineering (CSE) is ₹85,000.",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges",
+      "attendance_policy.md#Minimum Attendance Requirement"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 11638
+  },
+  {
+    "id": "AIT-QRY-D0A98EB7",
+    "timestamp": "2026-09-04 19:09:15",
+    "question": "I received an internship email asking for ₹3,000. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": true,
+        "status": "analyzed",
+        "risk_score": 85,
+        "threat_level": "HIGH RISK",
+        "indicators": [
+          "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+          "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+          "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+        ],
+        "scamon_telemetry": {
+          "engine": "ScamON Multi-Agent Cybersecurity Platform",
+          "case_id": "SCAMON-AIT-SECURITY-001",
+          "suggested_agent": "Email Investigation",
+          "indicators_count": 3
+        },
+        "message": "ScamON security investigation successfully verified threat markers (HIGH RISK - 85/100)."
+      },
+      "final_assessment": "HIGH RISK / LIKELY SCAM",
+      "risk_score": 85,
+      "threat_level": "HIGH RISK",
+      "indicators": [
+        "Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation",
+        "Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements",
+        "Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students"
+      ],
+      "recommendation": "DO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: ONLINE (Verified)\n- **Composite Threat Score**: **85/100**\n- **Threat Classification**: **HIGH RISK**\n- **Detected Risk Indicators**:\n- Upfront recruitment fee demand (₹3,000): Payment requested for internship/job confirmation\n- Institutional Policy Violation: Amypo Institute policy prohibits collecting any fees for internships or placements\n- Advance-Fee Fraud Pattern: Pay-to-work exploitation vector targeting students\n\n### ⚖️ Final Assessment\n**HIGH RISK / LIKELY SCAM**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nDO NOT make any payment or click external links. This offer exhibits multiple high-risk scam indicators that directly violate Amypo Institute of Technology guidelines. Verify immediately with the Placement Cell (placement@amypo.edu.in).\n"
+    },
+    "latency_ms": 4682
+  },
+  {
+    "id": "AIT-QRY-2952B049",
+    "timestamp": "2026-09-04 19:07:46",
+    "question": "What is the CSE semester fee?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "Error generating answer from Ollama (HTTP 500): {\"error\":\"llama-server process has terminated: exit status 0xc0000409: The system detected an overrun of a stack-based buffer in this application. This overrun could potentially allow a malicious user to gain control of this application.: CUDA error: shared object initialization failed\\nCUDA error\"}",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges",
+      "attendance_policy.md#Minimum Attendance Requirement"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 34353
+  },
+  {
+    "id": "AIT-QRY-28794D25",
+    "timestamp": "2026-09-04 18:57:06",
+    "question": "I received an internship email asking for ₹3,000. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": false,
+        "status": "offline",
+        "message": "The college knowledge base is available, but ScamON security verification is currently unavailable.",
+        "risk_score": null,
+        "threat_level": "UNKNOWN",
+        "indicators": [],
+        "evidence": []
+      },
+      "final_assessment": "NEEDS HUMAN REVIEW (ScamON Offline)",
+      "risk_score": null,
+      "threat_level": "UNKNOWN",
+      "indicators": [],
+      "recommendation": "The college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n"
+    },
+    "latency_ms": 6329
+  },
+  {
+    "id": "AIT-QRY-D3423B1D",
+    "timestamp": "2026-09-04 18:56:53",
+    "question": "What is the minimum attendance percentage?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "The minimum attendance percentage required for a student to become eligible to appear for the End-Semester Examinations is **75.0%**.",
+    "source_documents": [
+      "attendance_policy.md#Minimum Attendance Requirement",
+      "attendance_policy.md#Condonation of Attendance Shortage (65.0% to 74.99%)",
+      "attendance_policy.md#Real-Time Attendance Monitoring",
+      "attendance_policy.md#Academic Attendance Standard"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 15692
+  },
+  {
+    "id": "AIT-QRY-9A5F7FCA",
+    "timestamp": "2026-09-04 18:55:12",
+    "question": "What is the CSE semester fee?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "According to the **Academic Tuition Fee Structure (Per Semester)** in Document 2, the semester tuition fee for Computer Science & Engineering (CSE) is:\n\n* ₹85,000",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges",
+      "attendance_policy.md#Minimum Attendance Requirement"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 34190
+  },
+  {
+    "id": "AIT-QRY-CB42177C",
+    "timestamp": "2026-09-04 18:45:18",
+    "question": "[Security Verify] Pay ₹1,500 registration deposit at http://tcs-amypo-careers....",
+    "detected_intent": "SECURITY_VERIFICATION",
+    "answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n",
+    "source_documents": [
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...",
+      "policy_sources": [
+        "placement_policy.md#🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES",
+        "internship_policy.md#Red Flags & Scam Indicators"
+      ],
+      "scamon_result": {
+        "available": false,
+        "status": "offline",
+        "message": "The college knowledge base is available, but ScamON security verification is currently unavailable.",
+        "risk_score": null,
+        "threat_level": "UNKNOWN",
+        "indicators": [],
+        "evidence": []
+      },
+      "final_assessment": "NEEDS HUMAN REVIEW (ScamON Offline)",
+      "risk_score": null,
+      "threat_level": "UNKNOWN",
+      "indicators": [],
+      "recommendation": "The college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).",
+      "formatted_answer": "### 🏛️ Official College Policy\n## 🚨 MANDATORY SECURITY WARNING: RECRUITMENT SCAMS & UNAUTHORIZED DRIVES\n> **CRITICAL RECRUITMENT FRAUD NOTICE**:\n> 1. All official Amypo recruitment drives, shortlists, schedules, and interview links are communicated **EXCLUSIVELY through the Amypo Placement ERP Portal** and official institutional emails ending with `@amypo.edu.in`.\n> 2. **NO RECR...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n"
+    },
+    "latency_ms": 6167
+  },
+  {
+    "id": "AIT-QRY-F33EA376",
+    "timestamp": "2026-09-04 18:45:12",
+    "question": "Does Amypo offer astronaut flight training courses?",
+    "detected_intent": "UNKNOWN_QUERY",
+    "answer": "I could not find that information in the college knowledge base.",
+    "source_documents": [
+      "admission.md#Admission Procedures & Guidelines - Amypo Institute of Technology",
+      "placement_policy.md#Corporate Placement Mission",
+      "attendance_policy.md#Attendance Regulations & Policy - Amypo Institute of Technology",
+      "academic_calendar.md#Academic Calendar & Key Operational Dates - Amypo Institute of Technology"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 9129
+  },
+  {
+    "id": "AIT-QRY-801099C1",
+    "timestamp": "2026-09-04 18:45:03",
+    "question": "I received an internship email asking for ₹3,000 registration fee. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": false,
+        "status": "offline",
+        "message": "The college knowledge base is available, but ScamON security verification is currently unavailable.",
+        "risk_score": null,
+        "threat_level": "UNKNOWN",
+        "indicators": [],
+        "evidence": []
+      },
+      "final_assessment": "NEEDS HUMAN REVIEW (ScamON Offline)",
+      "risk_score": null,
+      "threat_level": "UNKNOWN",
+      "indicators": [],
+      "recommendation": "The college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n"
+    },
+    "latency_ms": 6111
+  },
+  {
+    "id": "AIT-QRY-3E682922",
+    "timestamp": "2026-09-04 18:44:57",
+    "question": "What is the minimum attendance percentage required?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "The minimum attendance percentage required for a student to become eligible to appear for the End-Semester Examinations is **75.0%**. This is as per the Minimum Attendance Requirement policy.",
+    "source_documents": [
+      "attendance_policy.md#Minimum Attendance Requirement",
+      "attendance_policy.md#Condonation of Attendance Shortage (65.0% to 74.99%)",
+      "attendance_policy.md#Real-Time Attendance Monitoring",
+      "attendance_policy.md#Academic Attendance Standard"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 8463
+  },
+  {
+    "id": "AIT-QRY-A97D353D",
+    "timestamp": "2026-09-04 18:44:48",
+    "question": "What is the CSE semester fee?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "According to the Academic Tuition Fee Structure (Per Semester) in Document 2, the semester tuition fee for Computer Science & Engineering (CSE) is ₹85,000.",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges",
+      "attendance_policy.md#Minimum Attendance Requirement"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 9303
+  },
+  {
+    "id": "AIT-QRY-B819DCDB",
+    "timestamp": "2026-09-04 18:43:58",
+    "question": "What is the astronaut training fee at Amypo?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n# Fee Structure & Payment Policies - Amypo Institute of Technology...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n",
+    "source_documents": [
+      "fee_structure.md#Fee Structure & Payment Policies - Amypo Institute of Technology",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "admission.md#Admission Procedures & Guidelines - Amypo Institute of Technology"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "# Fee Structure & Payment Policies - Amypo Institute of Technology...",
+      "policy_sources": [
+        "fee_structure.md#Fee Structure & Payment Policies - Amypo Institute of Technology",
+        "fee_structure.md#Academic Tuition Fee Structure (Per Semester)"
+      ],
+      "scamon_result": {
+        "available": false,
+        "status": "offline",
+        "message": "The college knowledge base is available, but ScamON security verification is currently unavailable.",
+        "risk_score": null,
+        "threat_level": "UNKNOWN",
+        "indicators": [],
+        "evidence": []
+      },
+      "final_assessment": "NEEDS HUMAN REVIEW (ScamON Offline)",
+      "risk_score": null,
+      "threat_level": "UNKNOWN",
+      "indicators": [],
+      "recommendation": "The college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).",
+      "formatted_answer": "### 🏛️ Official College Policy\n# Fee Structure & Payment Policies - Amypo Institute of Technology...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n"
+    },
+    "latency_ms": 6186
+  },
+  {
+    "id": "AIT-QRY-F7EA4C44",
+    "timestamp": "2026-09-04 18:43:52",
+    "question": "I received an internship email asking for ₹3,000 registration fee. Is it genuine?",
+    "detected_intent": "SECURITY_QUERY",
+    "answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n",
+    "source_documents": [
+      "internship_policy.md#Red Flags & Scam Indicators",
+      "internship_policy.md#Golden Rule of Legitimacy",
+      "internship_policy.md#Verification Protocol for Students"
+    ],
+    "scamon_used": true,
+    "security_result": {
+      "is_security_fusion": true,
+      "college_policy": "### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...",
+      "policy_sources": [
+        "internship_policy.md#Red Flags & Scam Indicators",
+        "internship_policy.md#Golden Rule of Legitimacy"
+      ],
+      "scamon_result": {
+        "available": false,
+        "status": "offline",
+        "message": "The college knowledge base is available, but ScamON security verification is currently unavailable.",
+        "risk_score": null,
+        "threat_level": "UNKNOWN",
+        "indicators": [],
+        "evidence": []
+      },
+      "final_assessment": "NEEDS HUMAN REVIEW (ScamON Offline)",
+      "risk_score": null,
+      "threat_level": "UNKNOWN",
+      "indicators": [],
+      "recommendation": "The college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).",
+      "formatted_answer": "### 🏛️ Official College Policy\n### Red Flags & Scam Indicators\nIf you receive an internship offer via email, SMS, LinkedIn, Telegram, or WhatsApp displaying any of the following characteristics, treat it as a **POTENTIAL SCAM**:\n1. **Demand for Upfront Payment**: The recruiter requests ₹1,500 - ₹5,000 via Google Pay, PhonePe, or UPI for \"registration\", \"ID card generation\", or \"...\n\n### 🛡️ ScamON Security Analysis\n- **Service Status**: OFFLINE (Fallback Active)\n- **Composite Threat Score**: **N/A (Offline)**\n- **Threat Classification**: **UNKNOWN**\n- **Detected Risk Indicators**:\n- No anomalous threat signatures detected.\n\n### ⚖️ Final Assessment\n**NEEDS HUMAN REVIEW (ScamON Offline)**  \n*(Note: Threat analysis is automated and evidence-driven; verify with institution authorities for definitive confirmation.)*\n\n### 📋 Recommended Actions\nThe college knowledge base confirms strict policies against paying fees for offers. However, automated ScamON verification was unavailable. Do NOT make any payments. Please bring the communication directly to the Placement Cell (Block B, Room 102).\n"
+    },
+    "latency_ms": 6221
+  },
+  {
+    "id": "AIT-QRY-84D4B705",
+    "timestamp": "2026-09-04 18:43:46",
+    "question": "What is the minimum attendance percentage required?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "The minimum attendance percentage required for a student to become eligible to appear for the End-Semester Examinations is **75.0%**.",
+    "source_documents": [
+      "attendance_policy.md#Minimum Attendance Requirement",
+      "attendance_policy.md#Condonation of Attendance Shortage (65.0% to 74.99%)",
+      "attendance_policy.md#Real-Time Attendance Monitoring",
+      "attendance_policy.md#Academic Attendance Standard"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 8519
+  },
+  {
+    "id": "AIT-QRY-A6DC9536",
+    "timestamp": "2026-09-04 18:43:37",
+    "question": "What is the CSE semester fee?",
+    "detected_intent": "NORMAL_COLLEGE_QUERY",
+    "answer": "According to the Academic Tuition Fee Structure (Per Semester) in Document 2, the semester tuition fee for Computer Science & Engineering (CSE) is ₹85,000.",
+    "source_documents": [
+      "fee_structure.md#Examination Fees",
+      "fee_structure.md#Academic Tuition Fee Structure (Per Semester)",
+      "fee_structure.md#Annual Institutional & Auxiliary Charges",
+      "attendance_policy.md#Minimum Attendance Requirement"
+    ],
+    "scamon_used": false,
+    "security_result": {},
+    "latency_ms": 31995
+  }
+]

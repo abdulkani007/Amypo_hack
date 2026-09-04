@@ -11,6 +11,13 @@
 
 An Enterprise-Grade Multi-Agent AI Cybersecurity Investigation Platform for Detecting, Investigating, Correlating, and Reporting Digital Scam Evidence.
 
+> ### 🏛️ PS7 Upgrade: Amypo College Digital Reception & Local Knowledge System
+> Built for **Problem Statement 7 (PS7)**: *"Local Database Question-Answering System (No Third-Party API)"*.
+> - **100% Local Inference**: Powered by local Ollama (`llama3.1:8b`) and local ChromaDB (`nomic-embed-text`) with **zero external cloud API calls**.
+> - **Institutional Knowledge Base**: Grounded across 12 official policies and structured database for **Amypo Institute of Technology** (Chennai, TN).
+> - **Dual-Layer ScamON Bridge**: Cross-verifies suspicious offers, payment requests (e.g. ₹3,000 internship fee), and malicious links with ScamON forensic agents.
+> - **ChatGPT-Style Conversational UI**: Interactive conversational interface with prompt cards, collapsible citations, and SOC telemetry.
+
 ---
 
 ## 📖 Introduction

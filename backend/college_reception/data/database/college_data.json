@@ -1,0 +1,351 @@
+{
+  "_meta": {
+    "institution": "Amypo Institute of Technology",
+    "type": "DEMO / MOCK INSTITUTIONAL DATABASE",
+    "version": "2.4.0",
+    "last_updated": "2026-09-01",
+    "notice": "All data in this file is strictly fictional and generated for PS7 local demonstration and AI evaluation purposes."
+  },
+  "college": {
+    "name": "Amypo Institute of Technology",
+    "short_name": "AIT Chennai",
+    "tagline": "Pioneering Innovation in Autonomous Systems and Cyber Defense",
+    "established_year": 2008,
+    "affiliation": "Autonomous Institution, Approved by AICTE, Accredited by NAAC with A++ Grade",
+    "location": {
+      "campus": "Semmancheri Tech Campus",
+      "address": "No. 42, Rajiv Gandhi Salai (OMR IT Expressway), Semmancheri, Chennai, Tamil Nadu 600119",
+      "landmark": "Near Sholinganallur Junction, Opposite Cyber Hub",
+      "coordinates": "12.8682° N, 80.2224° E"
+    },
+    "official_website": "https://www.amypo.edu.in",
+    "student_erp_portal": "https://erp.amypo.edu.in",
+    "admissions_portal": "https://admissions.amypo.edu.in",
+    "office_hours": {
+      "weekdays": "Monday to Friday: 08:30 AM - 05:00 PM",
+      "saturdays": "1st and 3rd Saturdays: 09:00 AM - 01:00 PM",
+      "holidays": "Closed on Sundays and State Gazetted Holidays"
+    },
+    "principal": "Dr. S. R. Ramanathan, Ph.D. (IIT Madras)",
+    "dean_academics": "Dr. Meenakshi Sundaram, Ph.D.",
+    "dean_student_affairs": "Dr. K. Arulmozhi, Ph.D.",
+    "director_placements": "Prof. V. Chandrasekar"
+  },
+  "departments": [
+    {
+      "code": "CSE",
+      "name": "Computer Science & Engineering",
+      "hod": "Dr. Rajesh K. Varma",
+      "email": "hod.cse@amypo.edu.in",
+      "intake": 180,
+      "laboratories": [
+        "Advanced AI & Robotics Lab (Block A - 301)",
+        "Cybersecurity Forensics Lab (Block A - 304)",
+        "High Performance Cloud Computing Center (Block A - 308)"
+      ],
+      "semester_fee": 85000,
+      "currency": "INR"
+    },
+    {
+      "code": "IT",
+      "name": "Information Technology",
+      "hod": "Dr. Anita Priyadarshini",
+      "email": "hod.it@amypo.edu.in",
+      "intake": 120,
+      "laboratories": [
+        "Full-Stack Web Engineering Lab (Block B - 201)",
+        "Mobile App & IoT Architecture Lab (Block B - 205)"
+      ],
+      "semester_fee": 85000,
+      "currency": "INR"
+    },
+    {
+      "code": "ECE",
+      "name": "Electronics & Communication Engineering",
+      "hod": "Dr. G. Sivakumar",
+      "email": "hod.ece@amypo.edu.in",
+      "intake": 120,
+      "laboratories": [
+        "VLSI Design & Embedded Systems Lab (Block C - 102)",
+        "Microwave & Optical Communications Lab (Block C - 105)"
+      ],
+      "semester_fee": 75000,
+      "currency": "INR"
+    },
+    {
+      "code": "EEE",
+      "name": "Electrical & Electronics Engineering",
+      "hod": "Dr. P. Dhanalakshmi",
+      "email": "hod.eee@amypo.edu.in",
+      "intake": 60,
+      "laboratories": [
+        "Power Electronics & Smart Grid Lab (Block D - 101)",
+        "Electric Vehicles Powertrain Testbed (Block D - 104)"
+      ],
+      "semester_fee": 75000,
+      "currency": "INR"
+    },
+    {
+      "code": "MECH",
+      "name": "Mechanical Engineering",
+      "hod": "Dr. M. Senthil Nathan",
+      "email": "hod.mech@amypo.edu.in",
+      "intake": 60,
+      "laboratories": [
+        "CAD/CAM & Rapid Prototyping Center (Block E - Ground)",
+        "Thermodynamics & IC Engines Testing Bay (Block E - 02)"
+      ],
+      "semester_fee": 70000,
+      "currency": "INR"
+    },
+    {
+      "code": "AIDS",
+      "name": "Artificial Intelligence & Data Science",
+      "hod": "Dr. N. Karthikeyan",
+      "email": "hod.aids@amypo.edu.in",
+      "intake": 60,
+      "laboratories": [
+        "Deep Learning GPU Cluster (Block A - 402)",
+        "Big Data Analytics Studio (Block A - 405)"
+      ],
+      "semester_fee": 85000,
+      "currency": "INR"
+    }
+  ],
+  "fees": {
+    "tuition_per_semester": {
+      "CSE": 85000,
+      "IT": 85000,
+      "AIDS": 85000,
+      "ECE": 75000,
+      "EEE": 75000,
+      "MECH": 70000
+    },
+    "annual_mandatory_charges": {
+      "library_fee": 3000,
+      "laboratory_development_fee": 6000,
+      "student_activities_and_sports_fee": 2500,
+      "medical_insurance_coverage": 1500,
+      "internet_and_cloud_infrastructure": 3000
+    },
+    "examination_fee": {
+      "theory_paper_per_subject": 300,
+      "practical_lab_per_subject": 450,
+      "project_work_viva": 800,
+      "grade_sheet_charge_per_sem": 200
+    },
+    "payment_rules": {
+      "official_payment_modes": [
+        "Amypo Student ERP Portal Payment Gateway (https://erp.amypo.edu.in/fees)",
+        "NetBanking NEFT/RTGS to Official Amypo Canara Bank Virtual Account (verified via ERP)",
+        "Challan deposit at on-campus Canara Bank Branch, Amypo Campus"
+      ],
+      "security_warning": "CRITICAL: Amypo Institute NEVER accepts fee payments through personal Google Pay/PhonePe/Paytm numbers, UPI QR codes sent over WhatsApp, or external unsecured links. Any payment request not originating from erp.amypo.edu.in is unauthorized and fraudulent."
+    }
+  },
+  "attendance": {
+    "minimum_percentage_required": 75.0,
+    "condonation_range": {
+      "min": 65.0,
+      "max": 74.99,
+      "rules": "Allowed strictly on valid medical grounds, official university sports representation, or NCC/NSS participation.",
+      "documentation": "Original medical certificate stamped by Registered Medical Practitioner submitted within 7 working days of absence to Office of Dean (Academics).",
+      "condonation_fee": 1500
+    },
+    "detention_threshold": {
+      "below_percentage": 65.0,
+      "consequence": "Strictly detained from appearing in end-semester examinations. The student must repeat the entire semester in the subsequent academic year."
+    },
+    "tracking": "Attendance is updated hourly via biometric RFID entry in classrooms and visible in real time on the Amypo Student ERP app."
+  },
+  "hostel": {
+    "blocks": [
+      {
+        "name": "Kaveri Hostel Block",
+        "gender": "Boys",
+        "rooms": "AC & Non-AC 2/3 sharing",
+        "capacity": 450
+      },
+      {
+        "name": "Bhavani Hostel Block",
+        "gender": "Boys",
+        "rooms": "Non-AC 3/4 sharing",
+        "capacity": 380
+      },
+      {
+        "name": "Krishna Hostel Block",
+        "gender": "Girls",
+        "rooms": "AC & Non-AC 2/3 sharing",
+        "capacity": 400
+      },
+      {
+        "name": "Vaigai Hostel Block",
+        "gender": "Girls",
+        "rooms": "Non-AC 3 sharing",
+        "capacity": 320
+      }
+    ],
+    "annual_fees": {
+      "ac_two_sharing": 95000,
+      "non_ac_three_sharing": 75000,
+      "caution_deposit_refundable": 10000,
+      "mess_charges_included": true
+    },
+    "rules": {
+      "curfew_time": "08:30 PM sharp. Turnstiles require biometric verification.",
+      "late_entry_protocol": "Requires written approval from Chief Warden. Three unexcused late entries result in parental notice.",
+      "ragging_policy": "Zero Tolerance. Anti-ragging committee operates 24/7 hotline.",
+      "prohibited_items": "Electric heaters, induction stoves, iron boxes, alcohol, smoking, fireworks."
+    },
+    "chief_warden_contact": {
+      "name": "Prof. K. Venkatesan",
+      "phone": "+91-44-2834-0150",
+      "email": "hostelwarden@amypo.edu.in"
+    }
+  },
+  "examinations": {
+    "cycle": {
+      "odd_semester": "November - December",
+      "even_semester": "April - May"
+    },
+    "hall_entry_rules": {
+      "reporting_time": "30 minutes prior to exam commencement. Hall doors close 10 minutes prior.",
+      "mandatory_documents": [
+        "Official Amypo Student Photo ID Card (physical card)",
+        "Semester Exam Hall Ticket generated and printed from Amypo ERP"
+      ],
+      "prohibited_devices": [
+        "Mobile phones (even if switched off)",
+        "Smartwatches, Bluetooth earbuds, fitness bands",
+        "Programmable scientific calculators (only non-programmable fx-82/991 series permitted)",
+        "Loose paper, notebooks, or written material"
+      ]
+    },
+    "malpractice_penalty": "Immediate debarment from remaining examinations + reporting to University Malpractice Inquiry Committee.",
+    "revaluation_fee_per_paper": 750,
+    "exam_cell_email": "examcell@amypo.edu.in",
+    "exam_cell_location": "Administrative Block, Second Floor, Room 204"
+  },
+  "internships": {
+    "eligibility": "Students from 5th semester onwards with minimum CGPA of 6.5 and no active backlogs.",
+    "approval_process": [
+      "Submit company offer letter to Department Internship Coordinator.",
+      "Obtain verification and No Objection Certificate (NOC) signed by HOD and Dean (Industry Relations).",
+      "Log internship weekly report on Amypo Industry Relations Portal."
+    ],
+    "security_warning": {
+      "status": "HIGH ALERT",
+      "official_rule": "OFFICIAL AMYPO INTERNSHIPS NEVER REQUIRE ANY REGISTRATION FEE, TRAINING CHARGE, OR SECURITY DEPOSIT.",
+      "scam_indicators": [
+        "Company demanding money for interview slot, laptop allocation, or security clearance.",
+        "Offer letter issued from generic Gmail/Yahoo address instead of corporate domain.",
+        "Unrealistic stipends (e.g. ₹60,000/month for 1st year students) without technical interview.",
+        "Communication conducted exclusively via Telegram or WhatsApp groups."
+      ],
+      "reporting_contact": "placement@amypo.edu.in or visit Placement Cell in Block B, Ground Floor."
+    }
+  },
+  "placements": {
+    "eligibility_criteria": "7th semester students with minimum CGPA 6.0 and zero standing arrears.",
+    "top_recruiters": [
+      "Zoho Corporation",
+      "Tata Consultancy Services",
+      "Infosys",
+      "Cognizant",
+      "L&T Technology Services",
+      "Qualcomm",
+      "Bosch Global Software",
+      "Cisco Systems"
+    ],
+    "placement_cell_location": "Block B, Ground Floor, Rooms 102-106",
+    "placement_cell_email": "placement@amypo.edu.in",
+    "placement_cell_phone": "+91-44-2834-0103",
+    "recruitment_security_warning": "All campus recruitment notifications are posted ONLY on the official Amypo Placement ERP and sent from @amypo.edu.in emails. No external agency is authorized to collect recruitment fees on behalf of Amypo recruiters."
+  },
+  "scholarships": {
+    "institutional_schemes": [
+      {
+        "name": "Amypo Academic Excellence Merit Scholarship",
+        "eligibility": "Top 5% students in each department based on annual CGPA (>= 9.0).",
+        "benefit": "50% tuition fee waiver for the subsequent academic year."
+      },
+      {
+        "name": "Sports & Athletic Achievement Scholarship",
+        "eligibility": "State/National level medal winners representing Amypo in AIU tournaments.",
+        "benefit": "100% hostel and mess fee waiver + 50% tuition waiver."
+      },
+      {
+        "name": "Economic Disadvantage Support Grant",
+        "eligibility": "Annual family income below ₹2,00,000 with CGPA >= 7.5.",
+        "benefit": "₹35,000 per annum towards tuition."
+      }
+    ],
+    "government_schemes": [
+      {
+        "name": "Tamil Nadu First Graduate Scheme (Govt. of TN)",
+        "benefit": "₹25,000 fee concession per year directly deducted in tuition fee."
+      },
+      {
+        "name": "Post-Matric Scholarship (SC/ST/SCA Welfare)",
+        "benefit": "Full tuition and examination fee concession under Tamil Nadu Adi Dravidar Welfare Dept."
+      },
+      {
+        "name": "BC / MBC / DNC Welfare Scholarship",
+        "benefit": "Government sanctioned scholarship for eligible day scholars and hostellers."
+      }
+    ],
+    "scholarship_desk": "Administrative Block, Ground Floor, Room 104",
+    "scholarship_email": "scholarships@amypo.edu.in",
+    "verification_notice": "Amypo scholarship office never demands any processing fees or OTPs. All disbursements occur directly into the student's linked Aadhaar Bank Account."
+  },
+  "contacts": [
+    {
+      "department": "General Reception & Enquiries",
+      "email": "reception@amypo.edu.in",
+      "phone": "+91-44-2834-0100",
+      "location": "Main Entrance Atrium, Ground Floor"
+    },
+    {
+      "department": "Admissions Office",
+      "email": "admissions@amypo.edu.in",
+      "phone": "+91-44-2834-0101",
+      "location": "Administrative Block, Room 101"
+    },
+    {
+      "department": "Controller of Examinations (Exam Cell)",
+      "email": "examcell@amypo.edu.in",
+      "phone": "+91-44-2834-0102",
+      "location": "Administrative Block, Room 204"
+    },
+    {
+      "department": "Corporate Relations & Placement Cell",
+      "email": "placement@amypo.edu.in",
+      "phone": "+91-44-2834-0103",
+      "location": "Block B, Ground Floor, Room 102"
+    },
+    {
+      "department": "Scholarships & Financial Aid Desk",
+      "email": "scholarships@amypo.edu.in",
+      "phone": "+91-44-2834-0104",
+      "location": "Administrative Block, Room 104"
+    },
+    {
+      "department": "IT Helpdesk & ERP Support",
+      "email": "ithelpdesk@amypo.edu.in",
+      "phone": "+91-44-2834-0105",
+      "location": "Library Building, First Floor, Room 112"
+    },
+    {
+      "department": "Dean of Student Affairs",
+      "email": "studentaffairs@amypo.edu.in",
+      "phone": "+91-44-2834-0106",
+      "location": "Student Activity Center, Room 201"
+    },
+    {
+      "department": "Campus Security & Emergency Desk",
+      "email": "security@amypo.edu.in",
+      "phone": "+91-44-2834-0199",
+      "location": "Main Gate 1 Security Checkpost"
+    }
+  ]
+}

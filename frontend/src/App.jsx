@@ -3,11 +3,19 @@ import {
   Shield, LayoutDashboard, FileText, History, AlertOctagon, 
   Terminal, Settings, Upload, Activity, Server, Globe, 
   FileAudio, RefreshCw, Layers, ChevronRight, Play, AlertTriangle, Search, X, Minimize2,
-  PhoneCall, Mail, FolderLock, MessageSquare, Camera, Image as ImageIcon, ChevronDown, Cpu
+  PhoneCall, Mail, FolderLock, MessageSquare, Camera, Image as ImageIcon, ChevronDown, Cpu,
+  Building, BookOpen, Database, Sparkles
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LiveCallDetector from './LiveCallDetector';
 import LandingPage from './LandingPage';
+import CollegeReceptionDashboard from './college_reception/CollegeReceptionDashboard';
+import KnowledgeBaseExplorer from './college_reception/KnowledgeBaseExplorer';
+import DatabaseExplorer from './college_reception/DatabaseExplorer';
+import SecurityVerificationView from './college_reception/SecurityVerificationView';
+import QueryHistoryView from './college_reception/QueryHistoryView';
+import SystemStatusView from './college_reception/SystemStatusView';
+
 import { 
   auth, 
   googleProvider, 
@@ -300,9 +308,9 @@ export default function App() {
   // Sidebar State
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   
-  // Navigation State
-  const [activeNav, setActiveNav] = useState(() => localStorage.getItem('scamon_activeNav') || 'Dashboard');
-  const [view, setView] = useState(() => localStorage.getItem('scamon_view') || 'landing');
+  // Navigation State (PS7 College Reception Base Application)
+  const [activeNav, setActiveNav] = useState(() => localStorage.getItem('scamon_activeNav') || 'College Reception');
+  const [view, setView] = useState(() => localStorage.getItem('scamon_view') || 'dashboard');
 
   useEffect(() => {
     localStorage.setItem('scamon_view', view);
@@ -312,9 +320,9 @@ export default function App() {
     localStorage.setItem('scamon_activeNav', activeNav);
   }, [activeNav]);
 
-  // Firebase Auth State
-  const [user, setUser] = useState(null);
-  const [authLoading, setAuthLoading] = useState(true);
+  // Firebase Auth State (Defaults to local operator for offline autonomy)
+  const [user, setUser] = useState(() => ({ email: 'operator@amypo.edu.in', displayName: 'Amypo Reception Officer' }));
+  const [authLoading, setAuthLoading] = useState(false);
   const [authMode, setAuthMode] = useState('login'); // 'login' | 'signup'
   const [authEmail, setAuthEmail] = useState('');
   const [authPassword, setAuthPassword] = useState('');
@@ -323,6 +331,9 @@ export default function App() {
   // Sidebar Search and Expand States
   const [sidebarSearchQuery, setSidebarSearchQuery] = useState('');
   const [sectionsExpanded, setSectionsExpanded] = useState({
+    core: true,
+    ai_services: true,
+    scamon: true,
     hub: true,
     ai: true,
     evidence: true,
@@ -3772,28 +3783,33 @@ export default function App() {
           >
             {[
               {
-                id: 'hub',
-                title: 'Hub Orchestration',
+                id: 'core',
+                title: 'Core Reception',
                 items: [
-                  { name: 'Dashboard', label: 'Master Agent Hub', icon: LayoutDashboard }
+                  { name: 'College Reception', label: 'College Reception', icon: Building },
+                  { name: 'Knowledge Base', label: 'Knowledge Base', icon: BookOpen },
+                  { name: 'Database Explorer', label: 'Database Explorer', icon: Database }
                 ]
               },
               {
-                id: 'ai',
-                title: 'AI Detectors',
+                id: 'ai_services',
+                title: 'AI Services',
                 items: [
+                  { name: 'Ask the College', label: 'Ask the College', icon: Sparkles },
+                  { name: 'Security Verification', label: 'Security Verification', icon: Shield }
+                ]
+              },
+              {
+                id: 'scamon',
+                title: 'ScamON Security Layer',
+                items: [
+                  { name: 'Dashboard', label: 'Master Agent Hub', icon: LayoutDashboard },
                   { name: 'Call Analysis', label: 'Call Analysis', icon: Activity },
                   { name: 'Live Call Detector', label: 'Live Call Detector', icon: PhoneCall },
                   { name: 'SMS Investigation', label: 'SMS Investigation', icon: MessageSquare },
                   { name: 'Web & QR Scan', label: 'Web & QR Scan', icon: Globe },
                   { name: 'Email Investigation', label: 'Email Investigation', icon: Mail },
-                  { name: 'Visual Investigation', label: 'Visual Investigation', icon: Camera }
-                ]
-              },
-              {
-                id: 'evidence',
-                title: 'Case Evidence',
-                items: [
+                  { name: 'Visual Investigation', label: 'Visual Investigation', icon: Camera },
                   { name: 'Evidence Vault', label: 'Evidence Vault', icon: FolderLock },
                   { name: 'Complaint Agent', label: 'Complaint Agent', icon: FileText },
                   { name: 'Explainability (XAI)', label: 'Explainability (XAI)', icon: Layers }
@@ -3803,7 +3819,8 @@ export default function App() {
                 id: 'system',
                 title: 'System Utilities',
                 items: [
-                  { name: 'History', label: 'History Feed', icon: History },
+                  { name: 'Query History', label: 'Query History', icon: History },
+                  { name: 'System Status', label: 'System Status', icon: Activity },
                   { name: 'Threat Reports', label: 'Threat Reports', icon: AlertOctagon },
                   { name: 'API Logs', label: 'API Logs', icon: Terminal },
                   { name: 'Settings', label: 'Settings Panel', icon: Settings }
@@ -4031,6 +4048,36 @@ export default function App() {
 
         <main className={`content-area ${activeTransition ? 'cinematic-transition' : ''}`}>
           
+          {/* PS7 CORE: College Reception Dashboard (Default View) */}
+          {(activeNav === 'College Reception' || activeNav === 'Ask the College') && (
+            <CollegeReceptionDashboard onNavigate={(nav) => setActiveNav(nav)} />
+          )}
+
+          {/* PS7 CORE: Knowledge Base Explorer */}
+          {activeNav === 'Knowledge Base' && (
+            <KnowledgeBaseExplorer />
+          )}
+
+          {/* PS7 CORE: Database Explorer */}
+          {activeNav === 'Database Explorer' && (
+            <DatabaseExplorer />
+          )}
+
+          {/* PS7 AI SERVICES: Security Verification */}
+          {activeNav === 'Security Verification' && (
+            <SecurityVerificationView onNavigate={(nav) => setActiveNav(nav)} />
+          )}
+
+          {/* PS7 SYSTEM: Investigation / Query History */}
+          {activeNav === 'Query History' && (
+            <QueryHistoryView onSelectQuery={(q) => { setActiveNav('College Reception'); }} />
+          )}
+
+          {/* PS7 SYSTEM: System Status */}
+          {activeNav === 'System Status' && (
+            <SystemStatusView />
+          )}
+
           {/* Live Call Detector View */}
           {activeNav === 'Live Call Detector' && (
             <>

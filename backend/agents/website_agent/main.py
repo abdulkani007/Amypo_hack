@@ -74,6 +74,11 @@ app.include_router(visual_scam_router)
 from agents.copilot_routes import router as copilot_router
 app.include_router(copilot_router)
 
+# Register PS7 Amypo College Reception Agent router
+from college_reception.routes import router as college_reception_router
+app.include_router(college_reception_router)
+
+
 
 
 @app.on_event("startup")
