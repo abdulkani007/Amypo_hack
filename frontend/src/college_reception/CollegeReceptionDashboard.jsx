@@ -984,7 +984,7 @@ export default function CollegeReceptionDashboard({ onNavigate }) {
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                                   {msg.sources.map((src, srcIdx) => {
                                     const sourceName = typeof src === 'string' ? src : (src.source || src.document || 'Document');
-                                    const relevance = typeof src === 'object' ? src.relevance_pct : null;
+                                    const relevance = typeof src === 'object' && typeof src.relevance_pct === 'number' && !isNaN(src.relevance_pct) ? Math.round(src.relevance_pct) : null;
                                     const snippet = typeof src === 'object' ? src.text : null;
                                     const isExpanded = expandedSources[`${msg.id}_${srcIdx}`];
 
@@ -1007,7 +1007,7 @@ export default function CollegeReceptionDashboard({ onNavigate }) {
                                             <span style={{ fontSize: '11px', color: '#fff', fontWeight: 'bold' }}>{sourceName}</span>
                                           </div>
                                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            {relevance && (
+                                            {relevance !== null && !isNaN(relevance) && (
                                               <span style={{ fontSize: '10px', color: 'var(--accent-green)' }}>
                                                 {relevance}% match
                                               </span>
