@@ -4,7 +4,7 @@ import {
   Terminal, Settings, Upload, Activity, Server, Globe, 
   FileAudio, RefreshCw, Layers, ChevronRight, Play, AlertTriangle, Search, X, Minimize2,
   PhoneCall, Mail, FolderLock, MessageSquare, Camera, Image as ImageIcon, ChevronDown, Cpu,
-  Building, BookOpen, Database, Sparkles
+  Building, BookOpen, Database, Sparkles, Zap
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LiveCallDetector from './LiveCallDetector';
@@ -321,7 +321,17 @@ export default function App() {
   }, [activeNav]);
 
   // Firebase Auth State (Defaults to local operator for offline autonomy)
-  const [user, setUser] = useState(() => ({ email: 'operator@amypo.edu.in', displayName: 'Amypo Reception Officer' }));
+  const [user, setUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('scamon_local_user');
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    const defaultOp = { email: 'operator@amypo.edu.in', displayName: 'Amypo Reception Officer', isLocal: true };
+    try {
+      localStorage.setItem('scamon_local_user', JSON.stringify(defaultOp));
+    } catch (e) {}
+    return defaultOp;
+  });
   const [authLoading, setAuthLoading] = useState(false);
   const [authMode, setAuthMode] = useState('login'); // 'login' | 'signup'
   const [authEmail, setAuthEmail] = useState('');
@@ -491,14 +501,60 @@ export default function App() {
     return errorMsg.replace("Firebase: ", "");
   };
 
+  // Suppress Firebase internal popup assertion rejection bug
+  useEffect(() => {
+    const handleRejection = (e) => {
+      const msg = e?.reason?.message || String(e?.reason || '');
+      if (msg.includes("INTERNAL ASSERTION FAILED") || msg.includes("Pending promise was never set")) {
+        if (e.preventDefault) e.preventDefault();
+        console.warn("[ScamON Auth] Suppressed unhandled Firebase Auth popup assertion error:", msg);
+      }
+    };
+    window.addEventListener('unhandledrejection', handleRejection);
+    return () => window.removeEventListener('unhandledrejection', handleRejection);
+  }, []);
+
   // Firebase auth status subscription
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+      if (currentUser) {
+        setUser(currentUser);
+      } else {
+        // Fallback to local operator session if one exists in localStorage
+        try {
+          const saved = localStorage.getItem('scamon_local_user');
+          if (saved) {
+            setUser(JSON.parse(saved));
+          } else {
+            // Provide default local operator session so the user is never locked out
+            const defaultOp = { email: 'operator@amypo.edu.in', displayName: 'Amypo Reception Officer', isLocal: true };
+            localStorage.setItem('scamon_local_user', JSON.stringify(defaultOp));
+            setUser(defaultOp);
+          }
+        } catch (e) {
+          setUser({ email: 'operator@amypo.edu.in', displayName: 'Amypo Reception Officer', isLocal: true });
+        }
+      }
       setAuthLoading(false);
     });
     return () => unsubscribe();
   }, []);
+
+  const handleLocalOperatorLogin = () => {
+    const op = { 
+      uid: 'local_op_' + Date.now(), 
+      email: 'operator@amypo.edu.in', 
+      displayName: 'Amypo Reception Officer', 
+      isLocal: true 
+    };
+    try {
+      localStorage.setItem('scamon_local_user', JSON.stringify(op));
+      localStorage.setItem('scamon_view', 'dashboard');
+    } catch (e) {}
+    setUser(op);
+    setAuthError('');
+    setView('dashboard');
+  };
 
   const handleEmailLogin = async (e) => {
     e.preventDefault();
@@ -510,7 +566,8 @@ export default function App() {
     try {
       await signInWithEmailAndPassword(auth, authEmail, authPassword);
     } catch (err) {
-      setAuthError(err.message.replace("Firebase:", ""));
+      const clean = getCleanAuthError(err.message || '');
+      setAuthError(clean + " (Or click 'CONTINUE AS LOCAL OPERATOR' above to proceed without credentials)");
     }
   };
 
@@ -524,7 +581,7 @@ export default function App() {
     try {
       await createUserWithEmailAndPassword(auth, authEmail, authPassword);
     } catch (err) {
-      setAuthError(err.message.replace("Firebase:", ""));
+      setAuthError(getCleanAuthError(err.message || ''));
     }
   };
 
@@ -533,19 +590,30 @@ export default function App() {
     try {
       await signInWithPopup(auth, googleProvider);
     } catch (err) {
-      setAuthError(err.message.replace("Firebase:", ""));
+      const msg = err?.message || '';
+      if (msg.includes("popup-closed-by-user") || msg.includes("cancelled")) {
+        setAuthError("Google Sign-In was cancelled.");
+      } else if (msg.includes("popup-blocked")) {
+        setAuthError("Browser blocked popup window. Please allow popups or continue as Local Operator.");
+      } else {
+        setAuthError("Google Sign-In unavailable. Click 'CONTINUE AS LOCAL OPERATOR' above to enter instantly.");
+      }
     }
   };
 
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      localStorage.removeItem('scamon_view');
-      localStorage.removeItem('scamon_activeNav');
-      setView('landing');
     } catch (err) {
       console.error("Sign out error", err);
     }
+    try {
+      localStorage.removeItem('scamon_local_user');
+      localStorage.removeItem('scamon_view');
+      localStorage.removeItem('scamon_activeNav');
+    } catch (e) {}
+    setUser(null);
+    setView('landing');
   };
 
   const triggerCrossAgentRouting = (text, file, type, target) => {
@@ -3499,8 +3567,67 @@ export default function App() {
           <h1 style={{ fontSize: '26px', fontWeight: 'bold', color: '#fff', letterSpacing: '3px', margin: '0 0 4px 0' }}>
             SCAM<span style={{ color: '#00E676' }}>ON</span> AI
           </h1>
-          <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '32px' }}>
+          <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '20px' }}>
             SOC Access Authorization Gate
+          </div>
+
+          {/* Fast-Pass Local Operator Access */}
+          <div style={{
+            marginBottom: '20px',
+            padding: '14px',
+            background: 'linear-gradient(135deg, rgba(0, 230, 118, 0.12), rgba(3, 8, 17, 0.75))',
+            border: '1px solid #00E676',
+            borderRadius: '4px',
+            boxShadow: '0 0 16px rgba(0, 230, 118, 0.18)'
+          }}>
+            <div style={{ 
+              fontSize: '10.5px', 
+              color: '#00E676', 
+              fontWeight: 'bold', 
+              letterSpacing: '1px',
+              marginBottom: '8px', 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              gap: '6px' 
+            }}>
+              <Zap style={{ width: '14px', height: '14px' }} />
+              EVALUATION / OFFLINE ACCESS
+            </div>
+            <button 
+              type="button"
+              onClick={handleLocalOperatorLogin}
+              style={{
+                width: '100%',
+                padding: '11px',
+                background: '#00E676',
+                border: 'none',
+                color: '#020305',
+                fontWeight: 'bold',
+                fontSize: '13px',
+                fontFamily: 'monospace',
+                cursor: 'pointer',
+                borderRadius: '2px',
+                letterSpacing: '1px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                boxShadow: '0 0 12px rgba(0, 230, 118, 0.35)'
+              }}
+            >
+              <Zap style={{ width: '15px', height: '15px' }} />
+              CONTINUE AS LOCAL OPERATOR ❯
+            </button>
+            <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.5)', marginTop: '8px', lineHeight: '1.4' }}>
+              One-click bypass for PS7 &amp; ScamON • No cloud account required
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', margin: '16px 0', gap: '10px' }}>
+            <div style={{ flex: 1, height: '1px', background: 'rgba(255,255,255,0.08)' }} />
+            <span style={{ fontSize: '9px', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '1px' }}>OR CLOUD TERMINAL AUTH</span>
+            <div style={{ flex: 1, height: '1px', background: 'rgba(255,255,255,0.08)' }} />
           </div>
 
           <form onSubmit={authMode === 'login' ? handleEmailLogin : handleEmailSignup} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
